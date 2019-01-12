@@ -23,7 +23,7 @@ class Genre
   def artists 
 
     my_songs = self.songs
-    my_artists = my_songs.collect do |song|
+    my_artists = self.my_songs.collect do |song|
       song.artist 
     end 
     my_artists
