@@ -9,7 +9,7 @@ class Genre
   
   @@all = [] 
   
-  def all 
+  def self.all 
     @@all 
   end 
   
