@@ -26,7 +26,7 @@ class Artist
   
   def genres
     my_songs = self.songs
-    my_genres = my_songs.collect do |song|
+    my_genres = my_songs.map do |song|
       song.genre 
     end 
     my_genres
