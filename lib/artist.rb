@@ -32,3 +32,5 @@ class Artist
     my_genres
   end
   
+end
+  
