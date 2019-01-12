@@ -26,7 +26,8 @@ class Artist
     my_songs
   end
   
-  
+  def genres 
+    my_songs = self.songs
 
 
 
