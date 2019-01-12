@@ -11,7 +11,7 @@ class Song
  
   @@all = []
   
-  def all
+  def self.all
     @@all 
   end 
   
