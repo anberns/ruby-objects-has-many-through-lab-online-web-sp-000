@@ -27,17 +27,11 @@ class Artist
   end
   
   def genres 
-    my_songs = self.songs
-
-
-
-
-
-- The `Artist` class needs an instance method, `#new_song`, that takes in an
-  argument of a name and genre creates a new song. That song should know that it
-  belongs to the artist.
-- The `Artist` class needs an instance method, `#songs`, that iterates through all
-  songs and finds the songs that belong to that artist. Try using `select` to
-  achieve this.
-- The `Artist` class needs an instance method, `#genres` that iterates over that
-  artist's songs and collects the genre of each song.
+    my_genres = self.songs.collect do |song|
+      song.genre 
+    end 
+    my_genres
+  end
+  
+end
+  
