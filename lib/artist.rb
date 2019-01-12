@@ -24,12 +24,11 @@ class Artist
     my_songs
   end
   
-  def genres 
-    my_genres = self.songs.collect do |song|
+  def genres
+    my_songs = self.songs
+    my_genres = my_songs.collect do |song|
       song.genre 
     end 
     my_genres
   end
-  
-end
   
